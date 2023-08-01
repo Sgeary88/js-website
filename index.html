@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/theme.css">
 	<link rel="stylesheet" href="./css/base.css">
 	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="stylesheet" href="./css/pages.css">
 	<title>JS Website</title>
 </head>
+
 <body>
 	<main class="site-wrapper">
 		<header class="site-header">
 			<nav class="navbar">
 				<div class="brand-logo">
-					<a href="/"><h2>JS Web</h2></a>
+					<a href="/">
+						<h2>JS Web</h2>
+					</a>
 				</div>
 				<div class="navbar-nav">
 					<ul class="ul-defaults-none main-menu">
 						<li class="nav-item">Home</li>
-						<li class="nav-item">About Me</li>
-						<li class="nav-item">Contact</li>
+						<li class="nav-item" data-open="about">About Me</li>
+						<li class="nav-item" data-open="contact">Contact</li>
 					</ul>
 				</div>
 			</nav>
 		</header>
 	</main>
 
+<!----------------------- MODALS  ----------------------->
+<!----------------------- ABOUT PAGE MODAL  ----------------------->
+	<div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
+		<header class="modal-header">
+			<h3>ABOUT PAGE</h3>
+			<i class="fas fa-times" data-close></i>
+		</header>
+		<div class="modal-body">
+			<div class="img-wrapper">
+				<img src="./assets/img/face-picture.jpg" alt="My Picture">
+			</div>
+			<h2>Shane Geary</h2>
+			<p>text 1</p>
+			<p>text 2
+			<div>
+				<div>Email Me:</div>
+					<a href="mailto:fillermail@yahoo.com">filler@yahoo.com</a>
+			</div>
+			</p>
+		</div>
+	</div>
+
+	<!----------------------- CONTACT PAGE MODAL  ----------------------->
+	<div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
+		<header class="modal-header">
+			<h3>CONTACT PAGE</h3>
+			<i class="fas fa-times" data-close></i>
+		</header>
+		<div class="modal-body">
+			<div class="img-wrapper">
+				<img src="./assets/img/face-picture.jpg" alt="My Picture">
+			</div>
+			<h2>Shane Geary</h2>
+			<p>text 1</p>
+			<p>text 2
+			<div>
+				<div>Email Me:</div>
+					<a href="mailto:fillermail@yahoo.com">filler@yahoo.com</a>
+			</div>
+			</p>
+		</div>
+	</div>
+
 
 	<script src="./js/main.js"></script>
 </body>
+
 </html>
