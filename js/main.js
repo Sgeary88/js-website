@@ -25,7 +25,7 @@ const currentTheme = localStorage.getItem(theme);
 /***************************** PORTFOLIO *****************************/
 const filterLink = document.querySelectorAll(dataFilter);
 const portfolioItems = document.querySelectorAll(portfolioData);
-
+const searchBox = document.querySelector('#search');
 
 /***************************** MODAL *****************************/
 const openModal = document.querySelectorAll(modalOpen);
@@ -77,7 +77,20 @@ for(const element of switcher) {
 		setActive(element, switcherBtn);
 		setTheme(toggle);
 	})
-}
+};
+
+// Search input
+searchBox.addEventListener('keyup', (e) => {
+	const searchInput = e.target.value.toLowerCase().trim();
+	
+	portfolioItems.forEach((card) => {
+		if (card.dataset.item.includes(searchInput)) {
+			card.style.display = 'block';
+		} else {
+			card.style.display = 'none';
+		}
+	})
+});
 
 for(const link of filterLink) {
 	link.addEventListener('click', function() {
@@ -95,7 +108,7 @@ for(const link of filterLink) {
 	})
 }
 
-// For Site Modal 'open buttons'
+// /Modal/Full Site Modal 'open buttons'
 for (const element of openModal) {
 	element.addEventListener('click', function() {
 		const modalId = this.dataset.open;
@@ -103,9 +116,23 @@ for (const element of openModal) {
 	})
 }
 
-// For Site Modal 'close function'
+// Full Site Modal 'close function'
 for (const element of closeModal) {
 	element.addEventListener('click', function() {
-		this.parentElement.parentElement.classList.remove(isVisible);
+		this.parentElement.parentElement.parentElement.classList.remove(isVisible);
 	})
 }
+
+// Modal
+document.addEventListener('click', (e) => {
+	console.log(e.target, document.querySelector('.modal.is-visible'));
+	if (e.target === document.querySelector('.modal.is-visible')) {
+		document.querySelector('.modal.is-visible').classList.remove(isVisible);
+	}
+});
+
+document.addEventListener('keyup', (e) => {
+	if (e.key === 'Escape') {
+		document.querySelector('.modal.is-visible').classList.remove(isVisible);
+	}
+});
