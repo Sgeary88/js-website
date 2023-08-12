@@ -125,7 +125,6 @@ for (const element of closeModal) {
 
 // Modal
 document.addEventListener('click', (e) => {
-	console.log(e.target, document.querySelector('.modal.is-visible'));
 	if (e.target === document.querySelector('.modal.is-visible')) {
 		document.querySelector('.modal.is-visible').classList.remove(isVisible);
 	}
@@ -136,3 +135,14 @@ document.addEventListener('keyup', (e) => {
 		document.querySelector('.modal.is-visible').classList.remove(isVisible);
 	}
 });
+
+
+// Marquee 
+const elementsDisplayed = getComputedStyle(root).getPropertyValue('--marquee-element-display');
+const marqueeContent = document.querySelector('ul.marquee-content');
+
+root.style.setProperty('--marquee-elements', marqueeContent.children.length);
+
+for (let i = 0; i < elementsDisplayed; i++) {
+	marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
