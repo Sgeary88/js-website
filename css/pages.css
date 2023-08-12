@@ -3,8 +3,8 @@
 }
 
 /***************************** ABOUT STYLES  *****************************/
-#about .modal-body {
-	margin-top: 5rem;
+#about .modal-body,
+#contact .modal-body {
 	padding: 2rem;
 	flex-wrap: wrap;
 }
@@ -29,6 +29,33 @@
 .about-text .contact-me-block {
 	font-size: 1.2rem;
 }
+
+/***************************** CONTACT ME STYLES  *****************************/
+#contact .modal-body {
+	display: block;
+}
+
+.contact-text {
+	padding-bottom: 3.5rem;
+}
+
+.contact-form .form-control {
+	display: block;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	max-width: 500px;
+	width: 100%;
+	color: var(--color-text);
+	padding: 0 0 5px 0;
+	line-height: 26px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid var(--border);
+	outline: transparent;
+	background: transparent;
+}
+
+
 
 /***************************** MARQUEE STYLES  *****************************/
 .marquee {
@@ -83,5 +110,35 @@
 	}
 	100% {
 		transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)))
+	}
+}
+
+@media (max-width: 991px) {
+	#about .img-wrapper,
+	#about .about-text {
+		flex: initial;
+		margin: 0 auto;
+	}
+
+	.page-block {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		--marquee-width: 100%;
+		--marquee-element-display: 3;
+	}
+
+	.marquee:before,
+	.marquee:after {
+		width: 5rem;
+	}
+}
+
+@media (max-width: 460px) {
+	:root {
+		--marquee-element-display: 2;
 	}
 }

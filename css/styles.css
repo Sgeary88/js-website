@@ -299,7 +299,7 @@
 	display: flex;
 	justify-content: center;
 	height: 250px;
-	margin: 200px 0;
+	margin: 200px 0 50px;
 	pointer-events: none;
 }
 
@@ -415,7 +415,7 @@
 	transition: all .4s ease-in;
 	visibility: hidden;
 	opacity: 0;
-	z-index: 100;
+	z-index: 5;
 }
 
 .modal-dialog {
@@ -495,3 +495,6 @@
 [data-animation="slideInOutTop"].is-visible .modal-dialog {
 	transform: none;
 }
+
+
+
