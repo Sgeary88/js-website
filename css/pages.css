@@ -27,7 +27,13 @@
 
 .about-text p,
 .about-text .contact-me-block {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
+}
+
+.about-text p {
+	white-space: balance;
+	letter-spacing: 0.5px;
+	line-height: 31px;
 }
 
 /***************************** CONTACT ME STYLES  *****************************/
@@ -37,6 +43,10 @@
 
 .contact-text {
 	padding-bottom: 3.5rem;
+}
+
+.contact-text > div {
+	font-size: 1.4rem;
 }
 
 .contact-form .form-control {
@@ -53,6 +63,11 @@
 	border-bottom: 1px solid var(--border);
 	outline: transparent;
 	background: transparent;
+	font-size: 1.3rem;
+}
+
+form input.btn {
+	font-size: 1.2rem;
 }
 
 

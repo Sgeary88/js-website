@@ -10,7 +10,7 @@
 }
 
 .theme-body {
-	background-color: #495fef;
+	background-color: var(--color-theme);
 	border: transparent;
 	max-width: 185px;
 	padding: 15px 13px;
@@ -20,8 +20,8 @@
 }
 
 .theme-body>span {
-	color: white;
-	font-size: 13px;
+	color: #f8f8f8;
+	font-size: 17px;
 	font-weight: 700;
 	letter-spacing: -0.09px;
 	line-height: 26px;
@@ -30,7 +30,7 @@
 }
 
 .theme-body .btn-group {
-	background-color: white;
+	background-color: #f8f8f8;
 	box-shadow: 0 12px 34px rgba(22, 28, 45, 0.2);
 	border-radius: 33px;
 	overflow: hidden;
@@ -69,7 +69,7 @@
 	width: 30px;
 	height: 40px;
 	border: none;
-	background: #495fef;
+	background: var(--color-theme);
 	color: white;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
@@ -102,7 +102,8 @@
 }
 
 .brand-logo a h2 {
-	font-size: 1.5rem;
+	font-family: 'Gelasio', 'Robot', sans-serif;
+	font-size: 2rem;
 	letter-spacing: -0.5px;
 	line-height: 1.42;
 }
@@ -132,7 +133,7 @@
 }
 
 .code-icon {
-	background-color: #da5252;
+	background-color: var(--color-theme);
 	color: var(--color-text);
 	padding: 1.25rem 1.5rem;
 	border-radius: 50rem;
@@ -156,15 +157,16 @@
 }
 
 .search-input {
-	padding: 1rem 4.5rem;
-	background-color: #f1f3f5;
-	border: 1px solid #f1f3f5;
+	padding: 0.5rem 0.75rem;
+	background-color: #e3e3e3;
+	border: transparent;
 	border-radius: 50rem;
+	font-size: 1.5rem;
 }
 
 .search-input:focus {
 	outline: none;
-	border-color: #4dabf7;
+	border-color: var(--color-theme);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125), 0 0 8px rgba(34, 139, 230, 0.5);
 }
 
@@ -172,6 +174,7 @@
 	position: absolute;
 	right: 15px;
 	font-size: 1.5rem;
+	color: black;
 }
 
 .portfolio-grid {
@@ -188,7 +191,7 @@
 
 .portfolio-filter-nav .filter-link {
 	padding: 0 1rem;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 1.6;
 	letter-spacing: 1.63px;
 	font-weight: 700;
@@ -199,7 +202,7 @@
 }
 
 .portfolio-filter-nav .filter-link.active {
-	color: #495fef;
+	color: var(--color-theme);
 }
 
 .portfolio-grid {
@@ -442,6 +445,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 1rem;
+	font-size: 2rem;
 }
 
 .modal-dialog .modal-header h3 {
@@ -511,6 +515,3 @@
 [data-animation="slideInOutTop"].is-visible .modal-dialog {
 	transform: none;
 }
-
-
-
