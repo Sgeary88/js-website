@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&family=Palanquin:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&family=Montserrat:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
 :root {
 	--marquee-width: 80vw;
 	--marquee-height: 15vh;
@@ -23,13 +25,19 @@ nav {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Inter", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
 	color: var(--color-text);
 	background-color: var(--bg);
 	text-align: left;
+}
+
+h2,
+h3,
+li {
+	font-family: 'Palanquin', sans-serif;
 }
 
 a {

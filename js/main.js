@@ -136,7 +136,6 @@ document.addEventListener('keyup', (e) => {
 	}
 });
 
-
 // Marquee 
 const elementsDisplayed = getComputedStyle(root).getPropertyValue('--marquee-element-display');
 const marqueeContent = document.querySelector('ul.marquee-content');

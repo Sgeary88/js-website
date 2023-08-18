@@ -113,9 +113,15 @@
 
 .main-menu .nav-item {
 	padding: 18px;
-	font-size: 15px;
+	font-size: 1.2rem;
+	font-weight: 700;
 	line-height: 26px;
 	cursor: pointer;
+}
+
+.nav-item a {
+	color: var(--color-text);
+	font-size: 35px;
 }
 
 /***************************** HERO STYLES  *****************************/
@@ -150,7 +156,7 @@
 }
 
 .search-input {
-	padding: 0.75rem 1.5rem;
+	padding: 1rem 4.5rem;
 	background-color: #f1f3f5;
 	border: 1px solid #f1f3f5;
 	border-radius: 50rem;
@@ -164,7 +170,8 @@
 
 .search-container .fa-search {
 	position: absolute;
-	right: 10px;
+	right: 15px;
+	font-size: 1.5rem;
 }
 
 .portfolio-grid {
@@ -181,7 +188,7 @@
 
 .portfolio-filter-nav .filter-link {
 	padding: 0 1rem;
-	font-size: 0.8125rem;
+	font-size: 1rem;
 	line-height: 1.6;
 	letter-spacing: 1.63px;
 	font-weight: 700;
@@ -441,8 +448,17 @@
 	color: var(--color-text-base);
 }
 
+.modal-dialog .text-wrapper p {
+	font-size: 1.75rem;
+}
+
+.text-wrapper .fa-github {
+	font-size: 3rem;
+	color: rgba(0, 0, 0, 0.75);
+}
+
 .modal-header .fa-times {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	transition: all .4s ease-in;
 }
 
