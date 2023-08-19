@@ -183,4 +183,9 @@ form input.btn {
 		white-space: nowrap;
 	}
 
+.container-fluid {
+	overflow-y: auto;
+	height: 100vh;
+}
+
 }
