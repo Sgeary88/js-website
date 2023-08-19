@@ -157,3 +157,30 @@ form input.btn {
 		--marquee-element-display: 2;
 	}
 }
+
+@media (max-width: 682px) {
+	.brand-logo {
+		display: none;
+	}
+
+	.navbar-nav {
+		margin: 0 auto;
+	}
+
+	.search-container {
+		text-align: center;
+	}
+
+	.portfolio-filter-nav {
+		justify-content: center;
+	}
+
+	.main-menu .nav-item {
+		padding: 10px;
+	}
+
+	.main-menu li:nth-child(2) {
+		white-space: nowrap;
+	}
+
+}
