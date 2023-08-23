@@ -182,6 +182,22 @@ form input.btn {
 	.main-menu li:nth-child(2) {
 		white-space: nowrap;
 	}
+	
+	.modal-dialog {
+		overflow-y: auto;
+	}
+
+	.modal-header h3 {
+		padding-right: 15px;
+	}
+
+	.modal-header i {
+		align-self: flex-start;
+	}
+
+	.modal-body {
+		display: block;
+	}
 
 .container-fluid {
 	overflow-y: auto;
